@@ -18,7 +18,7 @@ export default function Hero({ settings }) {
     <section
       className="relative min-h-[480px] sm:min-h-[560px] lg:min-h-[640px] flex items-center justify-center text-white overflow-hidden bg-stone-900"
       style={{
-        backgroundImage: `url(${defaultImage})`,
+        backgroundImage: `url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LMWJyXFBG-aYKjDW1YMSa63Pr4jZtone6TPNrFH_Qg&s=10)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

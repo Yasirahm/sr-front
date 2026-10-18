@@ -54,7 +54,7 @@ export default function Home({ settings }) {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border-2 sm:border-4 border-stone-100">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LMWJyXFBG-aYKjDW1YMSa63Pr4jZtone6TPNrFH_Qg&s=10"
                   alt="Sara Aijaz"
                   className="w-full h-72 sm:h-[450px] object-cover object-top"
                   loading="lazy"
