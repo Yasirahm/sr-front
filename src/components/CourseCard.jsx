@@ -1,7 +1,7 @@
 import React from 'react';
 import { MessageCircle, Clock, Tag } from 'lucide-react';
 
-export default function CourseCard({ course, whatsappNumber = '919876543210' }) {
+export default function CourseCard({ course, whatsappNumber = '+919796559364' }) {
   if (!course) return null;
 
   const defaultMsg = `Hello Sara Aijaz, I am interested in the ${course.title} course. Please provide me with more details.`;
@@ -12,16 +12,7 @@ export default function CourseCard({ course, whatsappNumber = '919876543210' }) 
     <div className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
       {/* Course Image */}
       <div className="relative h-52 w-full overflow-hidden bg-stone-100">
-        <img
-          src={course.image || '/images/hero.jpg'}
-          alt={course.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          onError={(e) => {
-            e.currentTarget.src =
-              'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80';
-          }}
-        />
+        
         <div className="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center space-x-1 shadow-sm">
           <Clock className="w-3 h-3 text-amber-400 mr-1" />
           <span>{course.duration}</span>

@@ -31,7 +31,7 @@ export default function Hero({ settings }) {
         
         {/* Subtle pill badge */}
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-200 text-xs sm:text-sm font-medium tracking-wide mb-4 sm:mb-6 max-w-full truncate">
-          <Sparkles className="w-3.5 h-3.5 text-amber-300 shrink-0" />
+          
           <span className="truncate">Sara Aijaz • Professional Educator</span>
         </div>
 

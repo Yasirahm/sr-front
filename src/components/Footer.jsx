@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Mail, MapPin, Instagram, Linkedin, Youtube, ArrowUpRight } from 'lucide-react';
 
-export default function Footer({ whatsappNumber = '919876543210' }) {
+export default function Footer({ whatsappNumber = '+919796559364' }) {
   const currentYear = 2026;
 
   return (
@@ -30,7 +30,7 @@ export default function Footer({ whatsappNumber = '919876543210' }) {
             {/* Social Icons */}
             <div className="flex items-center space-x-3 pt-1 sm:pt-2">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sara-aijaz-363528204?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-full bg-stone-800 hover:bg-amber-700 flex items-center justify-center text-stone-300 hover:text-white transition-colors"
@@ -38,24 +38,9 @@ export default function Footer({ whatsappNumber = '919876543210' }) {
               >
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-stone-800 hover:bg-amber-700 flex items-center justify-center text-stone-300 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-stone-800 hover:bg-amber-700 flex items-center justify-center text-stone-300 hover:text-white transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-4 h-4" />
-              </a>
+              
+             
+              
             </div>
           </div>
 
@@ -113,16 +98,16 @@ export default function Footer({ whatsappNumber = '919876543210' }) {
               </li>
               <li>
                 <a
-                  href="mailto:contact@saraaijaz.com"
+                  href="mailto:mirsarah16@gmail.com"
                   className="flex items-center space-x-2 text-stone-400 hover:text-amber-300 transition-colors break-all"
                 >
                   <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>contact@saraaijaz.com</span>
+                  <span>mirsarah16@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start space-x-2 text-stone-400">
                 <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <span>Delhi NCR / Online Worldwide</span>
+                <span>Srinagar, Jammu and Kashmir</span>
               </li>
             </ul>
           </div>

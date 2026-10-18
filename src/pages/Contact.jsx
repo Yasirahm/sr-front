@@ -22,7 +22,7 @@ export default function Contact({ settings }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const whatsappNumber = settings?.whatsappNumber || '919876543210';
+  const whatsappNumber = settings?.whatsappNumber || '+919796559364';
   const defaultWhatsAppMsg = 'Hello Sara Aijaz, I would like to know more about your courses.';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultWhatsAppMsg)}`;
 
