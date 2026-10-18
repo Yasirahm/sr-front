@@ -1,6 +1,8 @@
+
 [build]
-  command = "npm run build"
+  command = "chmod +x node_modules/.bin/vite && npm run build"
   publish = "dist"
+
 
 [build.environment]
   VITE_API_URL = "https://sr-backendd.onrender.com/api"
