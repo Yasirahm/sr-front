@@ -4,10 +4,10 @@ import { MessageCircle, Clock, Tag } from 'lucide-react';
 export default function CourseCard({ course, whatsappNumber = '+919796559364' }) {
   if (!course) return null;
 
-  const defaultMsg = `Hello Sara Aijaz, I am interested in the ${course.title} course. Please provide me with more details.`;
-  const messageToSend = course.whatsappMessage || defaultMsg;
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageToSend)}`;
-
+  
+const WHATSAPP_PHONE_NUMBER = '+919796559374';
+ const whatsappMessage = 'Hello Sara Aijaz, I am interested in the course. Please provide me with more details.';
+  const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
   return (
     <div className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1">
       {/* Course Image */}

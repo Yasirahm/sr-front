@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Mail, MapPin, Instagram, Linkedin, Youtube, ArrowUpRight } from 'lucide-react';
 
-export default function Footer({ whatsappNumber = '+919796559364' }) {
+export default function Footer({ whatsappNumber = '9796559364' }) {
   const currentYear = 2026;
-
+const WHATSAPP_PHONE_NUMBER = '+919796559374'; 
+ const whatsappMessage = 'Hello! I would like to ask for a fair price and discuss custom requirements for a website.';
+  const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
   return (
     <footer className="bg-stone-900 text-stone-300 pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,14 +87,16 @@ export default function Footer({ whatsappNumber = '+919796559364' }) {
             </h4>
             <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm">
               <li>
-                <a
-                  href={`https://wa.me/${whatsappNumber}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center space-x-2 text-stone-400 hover:text-amber-300 transition-colors group"
-                >
+                  <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-base font-semibold text-white bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 transition-colors shadow-sm shrink-0"
+            aria-label="Ask for a fair price on WhatsApp"
+          >
                   <MessageCircle className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
                   <span>WhatsApp Chat</span>
+                  
                   <ArrowUpRight className="w-3 h-3 opacity-60" />
                 </a>
               </li>

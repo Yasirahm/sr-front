@@ -21,10 +21,12 @@ export default function Contact({ settings }) {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
+const WHATSAPP_PHONE_NUMBER = '+919796559374';
+ const whatsappMessage = 'Hello Sara Aijaz, I am interested in the ${course.title} course. Please provide me with more details.';
+  const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
   const whatsappNumber = settings?.whatsappNumber || '+919796559364';
   const defaultWhatsAppMsg = 'Hello Sara Aijaz, I would like to know more about your courses.';
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultWhatsAppMsg)}`;
+  
 
   const [submitError, setSubmitError] = useState('');
 
